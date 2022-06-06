@@ -1,4 +1,4 @@
-baseurl = "https://zaitam.github.io/"
+baseurl = "https://zaitam.github.io/MateDoks/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
