@@ -1,11 +1,11 @@
 [[main]]
   name = "Docs"
-  url = "/docs/prologue/introduction/"
+  url = "docs/getting-started/home/"
   weight = 10
 
 [[main]]
   name = "Sobre"
-  url = "/sobre/"
+  url = "sobre/"
   weight = 20
 
 [[main]]
@@ -17,31 +17,26 @@
   name = "Contribuir"
   weight = 40
   identifier = "contribuir"
-  url = "/guias/contribuir/"
+  url = "guias/contribuir/"
   parent = "extra"
 
 [[main]]
   name = "MarkDown Guide"
   weight = 50
   identifier = "markdown"
-  url = "/guias/markdown/"
+  url = "guias/markdown/"
   parent = "extra"
 
 [[main]]
   name = "¿Que es LaTex?"
   weight = 60
   identifier = "latex"
-  url = "/guias/latex/"
+  url = "guias/latex/"
   parent = "extra"
 
 [[main]]
   name = "Agradecimientos"
   weight = 70
   identifier = "agradecimientos"
-  url = "/docs/prologue/quick-start/"
+  url = ""
   parent = "extra"
-
-# [[footer]]
-#   name = "Privacy"
-#   url = "/privacy-policy/"
-#   weight = 10
