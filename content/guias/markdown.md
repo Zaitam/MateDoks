@@ -40,7 +40,8 @@ Para escribir en negritas se rodea la frase o el contenido con doble `**` o `__`
 Para escribir subrayado se utilza los tags de HTML <u> y </u>, rondeando la palabra de `<u>esta forma</u>`
 
 Para hacer listas ordenadas se utilizan los numeros, comenzando con el `1`, seguidos de un punto y un espacio, asi:
-```
+
+```text
 1. Elemento A
 2. Elemento B
 3. Elemento C
@@ -48,7 +49,8 @@ Para hacer listas ordenadas se utilizan los numeros, comenzando con el `1`, segu
 ```
 
 Y para hacer una lista desordenada, se utilizan cualquier de `*`, `+`, `-`, seguidos de un espacio y el elemento, asi:
-```
+
+```text
 - Elemento A
 * Elemento B
 + Elemento C

@@ -1,19 +1,13 @@
-.home .card,
-.contributors.list .card,
 .card {
   margin-top: 2rem;
   margin-bottom: 2rem;
   transition: transform 0.3s;
 }
 
-.home .card:hover,
-.card:hover,
 .card:hover {
   transform: scale(1.025);
 }
 
-.home .card-body,
-.card-body,
 .card-body {
   padding: 1rem 2rem;
 }

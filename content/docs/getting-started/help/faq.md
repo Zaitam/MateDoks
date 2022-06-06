@@ -14,6 +14,7 @@ toc: true
 ---
 
 ## OMA?
+
 La Olimipiada matematica argentina
 
 ## Keyboard shortcuts for search?
