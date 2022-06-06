@@ -2,52 +2,127 @@
 <section class="section container-fluid mt-n3 pb-3">
   <div class="row justify-content-center">
     <div class="col-lg-12 text-center">
-      <h1 class="mt-0">{{ .Title }}</h1>
+      <h1 class="mt-0">M4t∈D<span style="font-size:calc(1.0rem + 1.5vw);">Θ</span>k<span style="font-size:calc(.8rem + 1.5vw); vertical-align: super;">s</span></h1>
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/" role="button">Get Started</a>
-      <p class="meta">Open-source MIT Licensed. <a href="https://github.com/h-enk/doks">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/" role="button">Empezar</a>
+      <p class="meta">Open-source - <a href="https://github.com/zaitam/MateDoks">GitHub v{{ $data := getJSON "/package.json" }}{{ $data.version }}</a></p>
     </div>
   </div>
 </section>
 {{ end }}
 
 {{ define "sidebar-prefooter" }}
-  {{ if eq $.Site.Language.LanguageName "English" }}
   <section class="section section-sm">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-5">
-          <h2 class="h4">Security aware</h2>
-          <p>Get A+ scores on <a href="https://observatory.mozilla.org/analyze/doks.netlify.app">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Fast by default ⚡️</h2>
-          <p>Get 100 scores on <a href="https://googlechrome.github.io/lighthouse/viewer/?gist=92eaa982d7dbf92f94fe8ecc03987c9a">Google Lighthouse</a> by default. Doks removes unused css, prefetches links, and lazy loads images.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">SEO-ready</h2>
-          <p>Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.</p>
-        </div>
-      </div>
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-5">
-          <h2 class="h4">Full text search</h2>
-          <p>Search your Doks site with FlexSearch. Easily customize index settings and search options to your liking.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Page layouts</h2>
-          <p>Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Dark mode</h2>
-          <p>Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.</p>
-        </div>
-      </div>
+    <div class="wave">
+      <svg viewBox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="m0 75l20.8-2.5c20.9-2.5 62.5-7.5 104.2-7s83.3 6.5 125 7.5 83.3-3 125-4.2c41.7-1.1 83.3 0.5 125-0.5s83.3-4.6 125-4.8 83.3 3.2 125 4 83.3-0.8 125-2.3 83.3-2.9 104.2-3.5l20.8-0.7v-61h-20.8-104.2-125-125-125-125-125-125-104.2-20.8z"/>
+        <path d="m0 57l20.8-2.8c20.9-2.9 62.5-8.5 104.2-10.2s83.3 0.7 125 0 83.3-4.3 125-3.5 83.3 6.2 125 9.8c41.7 3.7 83.3 5.7 125 3.2s83.3-9.5 125-13 83.3-3.5 125-3.2c41.7 0.4 83.3 1 104.2 1.4l20.8 0.3v-39h-20.8-104.2-125-125-125-125-125-125-104.2-20.8z"/>
+        <path d="m0 28l20.8-2.3c20.9-2.4 62.5-7 104.2-9.4 41.7-2.3 83.3-2.3 125 0.2s83.3 7.5 125 8.3c41.7 0.9 83.3-2.5 125-2s83.3 4.9 125 5.2 83.3-3.3 125-2.7c41.7 0.7 83.3 5.7 125 7.5 41.7 1.9 83.3 0.5 104.2-0.1l20.8-0.7v-32h-20.8-104.2-125-125-125-125-125-125-104.2-20.8z"/>
+      </svg>
     </div>
+    <!--<div class="container">
+      <div class="search-box">
+        <form style="max-width: 60rem; margin: 0 auto;" class="doks-search position-relative flex-grow-1 me-auto">
+          <input style="line-height: 3rem;  font-size: 1.5rem;" id="search" class="form-control is-search" type="search" placeholder="Search docs..." aria-label="Search docs..." autocomplete="off">
+          <div id="suggestions" class="shadow bg-white rounded d-none"></div>
+        </form>
+      </div>
+      <div>
+        <h2>Geometría</h2>
+        <div class="carousel geometry">
+          <a class="carousel-cell" href="#">
+            <div  class="item">
+              <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                <path d="M236.8,951.1l714.3-714.3c51.9-51.9,51.9-136,0-187.9C899.2-3,815.1-3,763.2,48.9L48.9,763.2c-51.9,51.9-51.9,136,0,187.9C100.8,1003,184.9,1003,236.8,951.1L236.8,951.1z"/>
+              </svg>
+              <p>
+                Lineas
+              </p>
+            </div>
+          </a>
+          <a class="carousel-cell" href="#">
+            <div class="item">
+              <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                <path d="M118.9,865.3h389.5c-5.9,15.8-12.8,31.9-20.5,48.4c-12.6,26.7-1.2,58.6,25.4,71.1c7.4,3.5,15.1,5.2,23,5.2c20,0,39.3-11.4,48.4-30.6c15.3-32.4,27.7-63.7,37-94.1h259.4c29.6,0,53.4-24,53.4-53.4c0-29.4-24-53.3-53.4-53.3H642.6c4.7-66.4-7.7-126.5-37.8-179.6c-22.5-39.8-52.9-71.4-86.2-96.6L912.3,101c20.8-21,20.5-54.8-0.5-75.6c-21-20.8-54.8-20.5-75.6,0.5L422.7,427.3c-81.3-34.8-155.1-42.5-160.6-43c-29.4-2.7-55.3,18.5-58.3,47.9c-3,29.4,18.5,55.6,47.9,58.5c0.7,0,40,4.4,88.7,20L80.8,774.4c-15.1,15.3-19.5,38.3-11.4,58.3C77.9,852.4,97.4,865.3,118.9,865.3z M443,559.2c27.2,18.8,51.9,42.7,68.9,72.9c20.3,35.8,27.9,78.1,23.2,126.2H246.6L443,559.2z"/>
+              </svg>
+              <p>
+                Ángulos
+              </p>
+            </div>
+          </a>
+          <a class="carousel-cell" href="#">
+            <div  class="item">
+              <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                <path d="M54.5,115.8C54.5,57.4,101.8,10,160.2,10h679.5c58.4,0,105.7,47.3,105.7,105.8v768.4c0,58.4-47.3,105.8-105.7,105.8H160.2c-58.4,0-105.7-47.3-105.7-105.8V115.8z M786.7,788.3H230.8c-33.2,0-60.1-23.4-60.1-55.8v-64.8c0-32.3,26.9-55.7,60.1-55.7h555.9c33.2,0,60.1,23.4,60.1,55.7v64.8C846.8,764.9,819.9,788.3,786.7,788.3z M719.5,657.8c-24,0-43.5,18.9-43.5,42.3c0,23.4,19.5,42.3,43.5,42.3c24,0,43.5-19,43.5-42.3S743.5,657.8,719.5,657.8L719.5,657.8L719.5,657.8z M786.7,569.8H230.8c-33.2,0-60.1-23.4-60.1-55.7v-64.9c0-32.3,26.9-55.7,60.1-55.7h555.9c33.2,0,60.1,23.4,60.1,55.7v64.9C846.8,546.5,819.9,569.8,786.7,569.8L786.7,569.8L786.7,569.8z M719.5,439.4c-24,0-43.5,19-43.5,42.4c0,23.3,19.5,42.4,43.5,42.4c24,0,43.5-19,43.5-42.4C763.1,458.3,743.5,439.4,719.5,439.4L719.5,439.4L719.5,439.4z M786.7,351.5H230.8c-33.2,0-60.1-23.5-60.1-55.8v-64.8c0-32.4,26.9-55.9,60.1-55.9h555.9c33.2,0,60.1,23.5,60.1,55.9v64.8C846.8,328,819.9,351.5,786.7,351.5L786.7,351.5L786.7,351.5z M719.5,221c-24,0-43.5,19-43.5,42.3s19.5,42.3,43.5,42.3c24,0,43.5-18.9,43.5-42.3S743.5,221,719.5,221L719.5,221L719.5,221z"/></g>
+              </svg>
+              <p>
+                Figuras
+              </p>
+            </div>
+          </a>
+          <a class="carousel-cell" href="#">
+            <div  class="item">
+              <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                <path d="M982.2,884.6l-444-813.5c-9.8-17.9-24.7-28.2-40.9-28.2c-16.3,0-31.2,10.3-40.9,28.4L17.6,884.5c-9.5,17.7-10.2,36-1.7,50.2c8.5,14.2,24.9,22.4,45,22.4h878.2c20.1,0,36.5-8.2,45-22.4C992.6,920.5,991.9,902.3,982.2,884.6z M950.2,914.6c-0.7,1.2-4.3,3-11.1,3H60.9c-6.8,0-10.4-1.9-11.1-3.1c-0.7-1.2-0.7-5.3,2.5-11.3L491.2,90c3-5.6,5.8-7.5,5.9-7.7c0.7,0.2,3.5,2.1,6.5,7.7l444,813.5C950.8,909.4,951,913.4,950.2,914.6z"/>
+              </svg>
+              <p>
+                Triángulos
+              </p>
+            </div>
+          </a>
+          <a class="carousel-cell" href="#">
+            <div  class="item">
+              <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+              </svg>
+              <p>
+                Cuadriláteros
+              </p>
+            </div>
+          </a>
+          <a class="carousel-cell" href="#">
+            <div  class="item">
+              <p>
+                Plano coordenado
+              </p>
+            </div>
+          </a>
+          <a class="carousel-cell" href="#">
+            <div  class="item">
+              <p>
+                Área y perímetro
+              </p>
+            </div>
+          </a>
+          <a class="carousel-cell" href="#">
+            <div  class="item">
+              <p>
+                Volumen y área de la superficie
+              </p>
+            </div>
+          </a>
+          <a class="carousel-cell" href="#">
+            <div  class="item">
+              <p>
+                Círculos
+              </p>
+            </div>
+          </a>
+      </div>
+        </div>
+    </div>-->
   </section>
-  {{ end }}
+
+<!-- flickity -->
+<!-- This gallery is a test and might be implemented in the future
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script><script>
+  new Flickity( '.geometry', {
+    wrapAround: false,
+    groupCells: true,
+  });
+</script> -->
 {{ end }}
 
 {{ define "sidebar-footer" }}

@@ -559,6 +559,10 @@ $navbar-dark-active-color:          $link-color-dark;
   border: 1px solid $border-dark;
 }
 
+[data-dark-mode] .section-sm {
+  background-color: $gray-600;
+}
+
 [data-dark-mode] summary:hover {
   background: $body-overlay-dark;
 }

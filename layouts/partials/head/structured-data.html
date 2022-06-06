@@ -31,12 +31,6 @@
       "name": "{{ .Site.Params.schemaName }}",
       "url": {{ print $baseURL }},
       "sameAs": [
-        {{ with .Site.Params.schemaTwitter -}}
-        {{ . }}
-        {{ end -}}
-        {{ with .Site.Params.schemaLinkedIn -}}
-        , {{ . }}
-        {{ end -}}
         {{ with .Site.Params.schemaGitHub -}}
         , {{ . }}
         {{ end -}}
@@ -134,64 +128,6 @@
         }
         }{{ end }}]
     },
-
-    {{ if and (eq .Kind "page") (or (eq .Section "blog") (eq .Section "docs") (eq .Section "tutorial") (eq .Section "showcase")) -}}
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Article",
-          "@id": {{ print $baseURL "#/schema/article/1" }},
-          "headline": "{{ .Title }}",
-          "description": "{{ .Description }}",
-          "isPartOf": {
-            "@id": {{ .Permalink }}
-          },
-          "mainEntityOfPage": {
-            "@id": {{ .Permalink }}
-          },
-          "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05CET" }}",
-          "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05CET" }}",
-          "author": {
-            "@id": {{ print $baseURL "#/schema/person/2" }}
-          },
-          {{ if eq .Site.Params.schemaType "Organization" -}}
-            "publisher": {
-              "@id": {{ print $baseURL "#/schema/organization/1" }}
-            },
-          {{ else -}}
-            "publisher": {
-              "@id": {{ print $baseURL "#/schema/person/1" }}
-            },
-          {{ end -}}
-          "image": {
-            "@id": {{ print .Permalink "#/schema/image/2" }}
-          }
-        }
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": {{ print $baseURL "#/schema/person/2" }},
-          "name": {{ .Site.Params.schemaAuthor }},
-          "sameAs": [
-            {{ with .Site.Params.schemaAuthorTwitter -}}
-            {{ . }}
-            {{ end -}}
-            {{ with .Site.Params.schemaAuthorLinkedIn -}}
-            , {{ . }}
-            {{ end -}}
-            {{ with .Site.Params.schemaAuthorGitHub -}}
-            , {{ . }}
-            {{ end -}}
-          ]
-        }
-      ]
-    },
-    {{ end -}}
     {
       "@context": "https://schema.org",
       "@graph": [

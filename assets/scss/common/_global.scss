@@ -1,9 +1,7 @@
 .contributors .content,
-.blog .content,
 .page .content,
 .error404 .content,
 .docs.list .content,
-.tutorial.list .content,
 .showcase.list .content {
   padding-top: 1rem;
   padding-bottom: 3rem;
@@ -93,7 +91,8 @@ a.btn:focus {
 }
 
 .section-sm {
-  padding-top: 1rem;
+  padding-top: 0;
+  background-color: $gray-300;
   padding-bottom: 1rem;
 }
 
