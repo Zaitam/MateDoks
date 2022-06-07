@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Geometria on</title><link>https://zaitam.github.io/MateDoks/docs/geometria/</link><description>Recent content in Geometria on</description><generator>Hugo -- gohugo.io</generator><language>es-AR</language><lastBuildDate>Mon, 06 Jun 2022 21:27:32 -0300</lastBuildDate><atom:link href="https://zaitam.github.io/MateDoks/docs/geometria/index.xml" rel="self" type="application/rss+xml"/><item><title>Triangulos</title><link>https://zaitam.github.io/MateDoks/docs/geometria/triangulos/</link><pubDate>Mon, 06 Jun 2022 21:26:27 -0300</pubDate><guid>https://zaitam.github.io/MateDoks/docs/geometria/triangulos/</guid><description>Clasificacion # Angulos # Acutangulo = 3 Angulos Agudos
+Rectangulo = 1 Angulo recto
+Obstusangulo = 1 Angulo obstuso
+Lados # Isosceles = 2 lados iguales
+Escaleno = Todos los lados distintos
+Equilatero = 3 lados iguales
+\begin{tikzpicture} \draw (0,0)node[below left]{A} -- ++(2,0)node[below right]{C}coordinate(C) -- ++(0,2)node[below right]{B} -- cycle; \draw (C) +(-3mm,0mm) |- +(0mm,3mm); \end{tikzpicture}</description></item></channel></rss>
