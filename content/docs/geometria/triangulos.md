@@ -8,6 +8,7 @@ images: []
 ---
 
 ## Clasificacion
+
 ### Angulos
 
 Acutangulo = 3 Angulos Agudos
@@ -23,7 +24,6 @@ Isosceles = 2 lados iguales
 Escaleno = Todos los lados distintos
 
 Equilatero = 3 lados iguales
-
 
 ---
 <script type="text/tikz">

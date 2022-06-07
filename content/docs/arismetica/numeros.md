@@ -25,12 +25,12 @@ Todo numero positivo y negativo entero, incluyendo al zero
 
 $ \mathbb{Z}=\{\texttt{-}\infty\ldots\texttt{-}1,0,1,2,\ldots\infty\} $
 
-
 ### Racionales - $\LARGE\mathbb{R}$
 
 Numeros que se pueden expresar como una faracion $a/b$, donde ${a,b}\in\mathbb{Z}$ (A y B son enteros)
 
 Incluye:
+
 - Numeros enteros - $47$
 - Fraciones - $12/5$
 - Numeros con coma - $47.89$
