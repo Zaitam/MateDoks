@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Arismetica on</title><link>https://zaitam.github.io/MateDoks/docs/arismetica/</link><description>Recent content in Arismetica on</description><generator>Hugo -- gohugo.io</generator><language>es-AR</language><lastBuildDate>Mon, 06 Jun 2022 21:49:58 -0300</lastBuildDate><atom:link href="https://zaitam.github.io/MateDoks/docs/arismetica/index.xml" rel="self" type="application/rss+xml"/><item><title>Numeros</title><link>https://zaitam.github.io/MateDoks/docs/arismetica/numeros/</link><pubDate>Mon, 06 Jun 2022 21:50:05 -0300</pubDate><guid>https://zaitam.github.io/MateDoks/docs/arismetica/numeros/</guid><description>Digitos → 0 al 9
 (0-1-2-3-4-5-6-7-8-9)
-Conjuntos # Naturales - $\LARGE\mathbb{N}$ # Numeros enteros y positivos (Excluyendo al zero y a los negativos)
+Conjuntos # Naturales - $\LARGE\mathbb{N}$: # Numeros enteros y positivos (Excluyendo al zero y a los negativos)
 $ \mathbb{N}={1,2,3,\ldots\infty} $
-Enteros - $\LARGE\mathbb{Z}$ # Todo numero positivo y negativo entero, incluyendo al zero
+Enteros - $\LARGE\mathbb{Z}$: # Todo numero positivo y negativo entero, incluyendo al zero
 $ \mathbb{Z}={\texttt{-}\infty\ldots\texttt{-}1,0,1,2,\ldots\infty} $
-Racionales - $\LARGE\mathbb{R}$ # Numeros que se pueden expresar como una faracion $a/b$, donde ${a,b}\in\mathbb{Z}$ (A y B son enteros)
+Racionales - $\LARGE\mathbb{Q}$: # Numeros que se pueden expresar como una faracion $a/b$, donde ${a,b}\in\mathbb{Z}$ (A y B son enteros)
 Incluye:
 Numeros enteros - $47$ Fraciones - $12/5$ Numeros con coma - $47.</description></item></channel></rss>
