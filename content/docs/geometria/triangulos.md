@@ -26,11 +26,3 @@ Escaleno = Todos los lados distintos
 Equilatero = 3 lados iguales
 
 ---
-<script type="text/tikz">
-  \begin{tikzpicture}
-    \draw (0,0)node[below left]{A} --
-  ++(2,0)node[below right]{C}coordinate(C) --
-  ++(0,2)node[below right]{B} -- cycle;
-  \draw (C) +(-3mm,0mm) |- +(0mm,3mm);
-  \end{tikzpicture}
-</script>

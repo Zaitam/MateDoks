@@ -6,4 +6,3 @@
   {{ $alertInit := resources.Get "js/alert-init.js" | js.Build | minify -}}
   <script>{{ $alertInit.Content | safeJS }}</script>
 {{- end -}}
-<script src="https://tikzjax.com/v1/tikzjax.js"></script>
